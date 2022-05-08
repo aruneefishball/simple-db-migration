@@ -1,0 +1,22 @@
+{
+  "name": "simple-migration",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "esrun src/main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Wireless4024",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@digitak/esrun": "^3.1.2",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "sequelize": "^6.19.0",
+    "tedious": "^14.4.0"
+  }
+}

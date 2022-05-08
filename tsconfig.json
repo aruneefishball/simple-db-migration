@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": false,
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "module": "commonjs"
+  },
+  "include": [
+    "main.ts",
+    "src/**/*"
+  ]
+}
