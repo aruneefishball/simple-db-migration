@@ -2,7 +2,7 @@
 
 ## To put sql in this folder
 
-+ Prefix by `XXXX_<SHORT_DESCRIPTION>.sql` `X` should be a number for readability
++ Filename should be `XXXX_<SHORT_DESCRIPTION>.sql` where `X` should be a number for readability
 + Program only scan for `.sql`
 
 ## Note
