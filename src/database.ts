@@ -1,6 +1,7 @@
 import path                    from "path";
 import {QueryTypes, Sequelize} from "sequelize";
 import {MigrationStep}         from "./migration_step";
+import {getOption}             from "./option";
 import {SqlManager}            from "./sql_manager";
 
 export class Database {
@@ -87,12 +88,14 @@ export class Database {
 					return Promise.reject("Empty sql file!")
 			}
 
-			await this.sequelize.query(`
-					${sql}
-					`, {
-				raw : true,
-				type: QueryTypes.RAW
-			})
+			// user tell us to skip
+			if (!getOption().hashOnly)
+				await this.sequelize.query(`
+						${sql}
+						`, {
+					raw : true,
+					type: QueryTypes.RAW
+				})
 			// if error it will fall into catch block
 			await this.incrementStep(step)
 		} catch (e) {
