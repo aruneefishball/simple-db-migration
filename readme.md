@@ -20,5 +20,6 @@ If error occur it will exit with non-zero status code and error in stderr
 ## TODO
 
 - [ ] cli to help to create migration
-- [x] checkpoint (undo if migration fail)
+- [ ] checkpoint (undo if migration fail)
+  > error inside transaction was unsupported by sequelize
 - [ ] another database
